@@ -1,0 +1,26 @@
+package dealunoparaaluno;
+import java.util.Scanner;
+
+public class ContGol {
+    public static void main(String[] args) {
+        int PT = 0; int ST = 0; int rep = 0;
+        
+        Scanner gol = new Scanner(System.in);
+        
+        System.out.println("Times");
+        String PTime = gol.nextLine();
+        String STime = gol.nextLine();
+        
+        while(rep != 5){
+            int cont = gol.nextInt();
+            
+            if(cont == 1){
+                ++PT;
+            }else if(cont == 2){
+                ++ST;    
+            }
+            System.out.println(PTime+" "+PT+" X "+ST+" "+STime);
+            ++rep;
+        }
+    }
+}
