@@ -1,0 +1,44 @@
+
+package vetores;
+import java.util.Scanner;
+
+public class ContadorPlacar {
+    public static void main(String[] args) {
+        
+        placar();
+        
+    }
+     public static void placar() {
+         Scanner input = new Scanner(System.in);
+         String PTime, STime;
+         int PT = 0, ST = 0, botao = 0;
+         int cont = 0;
+         
+         //Inserir os nomes dos times
+         System.out.println("Qual o primeiro time? ");
+         PTime = input.nextLine();
+         System.out.println("Qual o segundo time? ");
+         STime = input.nextLine();
+         
+         //contar os gols e somar o placar
+         
+         while(cont <= 5){
+             botao = input.nextInt();
+             if (botao == 1){
+                 PT = PT + 1;
+                 System.out.println("Goool "+PTime);
+                 System.out.println(PTime+" "+PT+" X "+ST+" "+STime);
+             }else if(botao == 2){
+                 ST = ST + 1;
+                 System.out.println("Goool "+STime);
+                 System.out.println(PTime+" "+PT+" X "+ST+" "+STime);
+             }
+             
+             cont = cont + 1;
+             
+         }
+         
+         
+    }
+ 
+}
