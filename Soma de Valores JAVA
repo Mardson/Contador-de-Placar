@@ -1,0 +1,42 @@
+package dealunoparaaluno;
+
+import java.util.Scanner;
+
+public class Aula37 {
+    public static void main(String[] args){
+       /* 
+       * double farinha = 250;
+       * System.out.println(farinha+" "+farinha/2);
+       * int receita = 0;
+       */
+       Scanner input = new Scanner(System.in);
+       /*
+       * System.out.println("Leia ");
+       * receita  = input.nextInt();
+       
+       *switch (receita){
+       *     case 1:
+       *         System.out.println("Faça inteira ");
+       *    break;
+       *     case 2:
+       *         System.out.println("Faça metade ");
+       *     break;
+                           
+       * }
+       */
+        double cont = 1;
+        double soma = 0;
+        System.out.println("Digite '00' para finalizar.");
+         while (cont != 00){
+            System.out.print("Valor do Produto! ");
+            cont = input.nextDouble();
+            soma = soma+cont; 
+             System.out.println("Valor Parcial é "+soma+"\n");
+           
+            }if (cont == 00){
+                System.out.println("Total a pagar! "+soma);
+            } 
+    
+    
+}
+}
