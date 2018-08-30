@@ -15,6 +15,7 @@ public class ContadorPlacar {
          int cont = 0;
          
          //Inserir os nomes dos times
+         
          System.out.println("Qual o primeiro time? ");
          PTime = input.nextLine();
          System.out.println("Qual o segundo time? ");
